@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+    font-family: Poppins;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.whole{
+    height: 500vh;
+}
+.main-container{
+    width: 100vw;
+    height: 90vh;
+    background-color: #2b2a33;
+    display: flex;
+    padding: 50px 120px;
+}
+
+.main-left{
+    width: 60%;
+    background-color: white;
+}
+
+.main-list{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+}
+
+.button-group{
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.button-group button{
+    transition: 250ms;
+    cursor: pointer;
+    background-color: #42414d;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    box-shadow: -5px 3px 6px rgba(0, 0, 0, 0.45);
+}
+
+.button-group button:hover{
+    background-color: #a6a5ad;   
+}
+
+.button-group button:hover ~ button{
+    background-color: yellow;
+}
+
+
+.list-circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 4px solid #BC53FF; 
+    box-shadow: -4px 5px 6px rgba(0, 0, 0, 0.45),
+    inset -3px 5px 6px rgba(0, 0, 0, 0.45);
+}
+
+.stack-outer{
+    height: auto;
+    background-color: #42414d;
+    padding: 30px 120px;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.45),
+                inset 0px -4px 8px rgba(0, 0, 0, 0.45);
+}
+
+.stack-inner{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.45);
+    border: 1px solid transparent;
+    height: 10vh;
+    background-color: #2b2a33;
+    border-radius: 50px;
+}
+
+.about-me{
+    height: 100vh;
+    background-color: #2b2a33;
+}
