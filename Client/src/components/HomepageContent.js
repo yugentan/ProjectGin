@@ -12,15 +12,13 @@ const HomepageContent=()=>{
         THIS IS THE LEFT
         </div>
         <div className={styles["main-list"]}>
-        <span className={styles["list-circle"]}></span>
-
         <div className={styles["button-group"]}>
-        <button>About Me</button>
-        <button onClick={()=>navigator(navi, "/aiplay")}>AI</button>
+        <button onClick={()=>navigator(navi, "/algovis")}>ALGO</button>
+        <button onClick={()=>navigator(navi, "/graprog")}>GP</button>
         <button onClick={()=>navigator(navi, "/oop")}>OOP</button> 
         <button onClick={()=>navigator(navi, "/datavis")}>Data</button>
-        <button onClick={()=>navigator(navi, "/graprog")}>GP</button>
-        <button onClick={()=>navigator(navi, "/algovis")}>ALGO</button>
+        <button onClick={()=>navigator(navi, "/aiplay")}>AI</button>
+        <button>About Me</button>
         </div>
         </div>
         </div>

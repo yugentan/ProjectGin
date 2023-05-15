@@ -5,6 +5,13 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+/*
+ * BASE: #2b2a33
+ * LIGHTER: #42414d
+ * EFFECTIVE GREEN: #3a4f50
+ * TEMPLATE: #0ef6cc
+ * */
 .whole{
     height: 500vh;
 }
@@ -18,7 +25,7 @@
 
 .main-left{
     width: 60%;
-    background-color: white;
+    border: 1px solid red;
 }
 
 .main-list{
@@ -32,28 +39,34 @@
 .button-group{
     height: 100%;
     display: flex;
-    flex-direction: column-reverse;
+    margin: auto;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .button-group button{
-    transition: 250ms;
+    transition: 350ms;
+    color: #0ef6cc;
     cursor: pointer;
-    background-color: #42414d;
-    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    width: 200px;
+    background-color: #2b2a33;
+    border: 2px solid #0ef6cc;
     border-radius: 8px;
     padding: 8px 12px;
-    box-shadow: -5px 3px 6px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.45);
 }
 
 .button-group button:hover{
-    background-color: #a6a5ad;   
+    color: #2b2a33;
+    background-color: #0ef6cc;  
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.85);
 }
 
-.button-group button:hover ~ button{
-    background-color: yellow;
+.button-group button:active{
+    box-shadow: none;
 }
-
 
 .list-circle{
     width: 30px;
