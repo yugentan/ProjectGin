@@ -7,8 +7,8 @@
 }
 
 /*
- * BASE: #2b2a33
- * LIGHTER: #42414d
+ * BACKGROUND: #101010
+ * EF BACKGROUND: 
  * EFFECTIVE GREEN: #3a4f50
  * TEMPLATE: #0ef6cc
  * */
@@ -18,7 +18,7 @@
 .main-container{
     width: 100vw;
     height: 90vh;
-    background-color: #2b2a33;
+    background-color: #262626;
     display: flex;
     padding: 50px 120px;
 }
@@ -46,40 +46,30 @@
 
 .button-group button{
     transition: 350ms;
-    color: #0ef6cc;
+    color: #efefef;
     cursor: pointer;
     font-size: 24px;
     font-weight: 500;
     width: 200px;
-    background-color: #2b2a33;
-    border: 2px solid #0ef6cc;
+    background-color: #ce1c1b;
+    border: 2px solid #ce1c1b;
     border-radius: 8px;
     padding: 8px 12px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.45);
 }
 
 .button-group button:hover{
-    color: #2b2a33;
-    background-color: #0ef6cc;  
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.85);
+    background-color: #ce1b1b;  
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.95);
 }
 
 .button-group button:active{
     box-shadow: none;
 }
 
-.list-circle{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 4px solid #BC53FF; 
-    box-shadow: -4px 5px 6px rgba(0, 0, 0, 0.45),
-    inset -3px 5px 6px rgba(0, 0, 0, 0.45);
-}
-
 .stack-outer{
     height: auto;
-    background-color: #42414d;
+    background-color: #1b1b1b;
     padding: 30px 120px;
     box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.45),
                 inset 0px -4px 8px rgba(0, 0, 0, 0.45);
@@ -89,11 +79,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.45);
     border: 1px solid transparent;
     height: 10vh;
-    background-color: #2b2a33;
+    background-color: #262626;
     border-radius: 50px;
 }
 
 .about-me{
     height: 100vh;
-    background-color: #2b2a33;
+    background-color: #262626;
 }

@@ -1,9 +1,10 @@
 import React from "react";
+import AlgorithmContent from "../components/AlgorithmContent";
 
 const AlgorithmPage=()=>{
     return(
-        <div> 
-            THIS IS AlgorithmPage
+        <div>
+            <AlgorithmContent />
         </div>
     )
 }

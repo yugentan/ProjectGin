@@ -5,6 +5,7 @@ import styles from "./styles/HomepageContent.module.css";
 
 const HomepageContent=()=>{
     let navi = useNavigate(); 
+    
     return(
         <div className={styles["whole"]}>
         <div className={styles["main-container"]}>
@@ -13,12 +14,12 @@ const HomepageContent=()=>{
         </div>
         <div className={styles["main-list"]}>
         <div className={styles["button-group"]}>
-        <button onClick={()=>navigator(navi, "/algovis")}>ALGO</button>
-        <button onClick={()=>navigator(navi, "/graprog")}>GP</button>
+        <button onClick={()=>navigator(navi, "/algovis")}>Visualize Algorithms</button>
+        <button onClick={()=>navigator(navi, "/graprog")}>Graphical Programming</button>
         <button onClick={()=>navigator(navi, "/oop")}>OOP</button> 
-        <button onClick={()=>navigator(navi, "/datavis")}>Data</button>
+        <button onClick={()=>navigator(navi, "/datavis")}>Data Visualisation</button>
         <button onClick={()=>navigator(navi, "/aiplay")}>AI</button>
-        <button>About Me</button>
+        <button>About Us</button>
         </div>
         </div>
         </div>
