@@ -1,9 +1,10 @@
 import React from "react";
+import GraphicContent from "../components/GraphicContent";
 
 const GraphicProgrammingPage=()=>{
     return(
         <div>
-            THIS IS GraphicProgrammingPage
+            <GraphicContent />
         </div>
     )
 }

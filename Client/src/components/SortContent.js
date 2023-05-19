@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Sketch from "./AlgorithmsSketches/Sketch";
 import styles from "./styles/AlgorithmContent.module.css"
 import BubbleSort from "./AlgorithmsSketches/Sort.Bubble.Sketch"
 import InsertionSort from "./AlgorithmsSketches/Sort.Insertion.Sketch";
@@ -8,22 +7,14 @@ import MergeSort from "./AlgorithmsSketches/Sort.Merge.Sketch";
 import QuickSort from "./AlgorithmsSketches/Sort.Quick.Sketch";
 import RadixSort from "./AlgorithmsSketches/Sort.Radix.Sketch";
 import HeapSort from "./AlgorithmsSketches/Sort.Heap.Sketch";
-import DFSMaze from "./AlgorithmsSketches/Find.DFSM.Sketch";
-const AlgorithmContent = () => {
-  const [algoState, setAlgoState] = useState(null);
+const SortContent = () => {
+  const [algoState, setAlgoState] = useState("sort");
   const [arrOfInt, setArrOfInt] = useState([]);
   const [startPressed, setStartPressed] = useState(false);
-  const [randomPath, setRandomPath] = useState(null);
   const handleSortClick = (e) =>{
     setAlgoState("sort");
     setStartPressed(false);
-    setRandomPath(null);
     setArrOfInt(generate300RandomElements());
-  }
-  const handlePathClick = () =>{
-    setAlgoState("path");
-    setStartPressed(false);
-    setRandomPath(null);
   }
 
   const handleSlide = (e) =>{
@@ -43,12 +34,6 @@ const AlgorithmContent = () => {
     }
     return randomIntegers;
   }
-  const handleDFSM = () =>{
-    setRandomPath("DFSM");
-  }
-  const handleEmpty = () =>{
-    setRandomPath("EMPTY");
-  }
   const handleStartPressed=()=>{
     setStartPressed(true);
   }
@@ -56,7 +41,6 @@ const AlgorithmContent = () => {
     <div className={styles["main-container"]}>
       <div className={styles["button-container"]}>
         <button className={styles["sort-button"]} onClick={handleSortClick} value={"sort"}>Sorting</button>
-        <button className={styles["search-button"]} onClick={handlePathClick} value={"path"}>Path Finding</button>
       </div>
       {!startPressed && algoState === "sort"? 
       (
@@ -111,24 +95,9 @@ const AlgorithmContent = () => {
         </div>
       </div>
       ) : <></>}
-      {algoState === "path" && randomPath == null ? (
-      <div className={styles["secondary-input"]}>
-        <button className={styles["start-button"]} onClick={handleDFSM}>Generate DFS Maze</button>
-        <button className={styles["start-button"]} onClick={handleEmpty}>Generate Empty Grid</button>
-      </div>
-      ) : <></>}
-      {algoState === "path" && randomPath == "DFSM" ? (
-      <div>
-        <DFSMaze />
-      </div>
-      ) : <></>}
-      {algoState === "path" && randomPath == "EMPTY" ? (
-      <div>
-       E
-      </div>
-      ) : <></>}
+      
     </div>
   );
 };
 
-export default AlgorithmContent;
+export default SortContent;
